@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Youtube Clone</title>
+    <link href="style.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/6092eefdf0.js" crossorigin="anonymous"></script>
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="main">
+        <section class="container-main">
+
+            <div class="bar-logo">
+                <i class="fa-solid fa-bars"></i>
+                <a href="#"><img src="imagens/youtube logo.png" /></a>
+            </div><!--Bar-Logo-->
+
+            <div class="pesquisar">
+                <input type="text" name="pesquisa" placeholder="Pesquisar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-microphone"></i>
+            </div><!-- Pesquisar-->
+
+            <div class="cbp">
+                <i class="fa-solid fa-video"></i>
+                <i class="fa-regular fa-bell"></i>
+                <h2>R</h2>
+            </div><!--CBP-->
+
+        </section><!--ContainerMain-->
+
+        <div class="interesses-center">
+            <div class="secao-interesses">
+                <p>Tudo</p>
+                <p>2</p>
+                <p>3</p>
+                <p>4</p>
+                <p>5</p>
+                <p>6</p>
+                <p>7</p>
+                <p>8</p>
+                <p>9</p>
+                <p>10</p>
+                <p>11</p>
+            </div>
+        </div>
+    </header> <!--Main-->
+
+
+    <nav class="column-left">
+        <div class="center-column">
+
+            <div class="secao-1">
+
+                <div class="boxes">
+                    <div class="box-home">
+                        <i class="fa-sharp fa-solid fa-house fa-lg"><span>Inicio</span></i>
+                    </div>
+                    <div class="box-shorts">
+                        <i class="fa-regular fa-square-caret-right fa-xl"><span>Shorts</span></i>
+                    </div>
+                    <div class="box-subs">
+                        <i class="fa-solid fa-clapperboard fa-lg"><span>Inscrições</span></i>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="line-division-1"></div>
+
+            <div class="secao-2">
+                <div class="boxes">
+                    <div class="box-library">
+                        <i class="fa-regular fa-clone"><span>Biblioteca</span></i>
+                    </div>
+
+                    <div class="box-history">
+                        <i class="fa-solid fa-clock-rotate-left"><span>Histórico</span></i>
+
+                    </div>
+
+                    <div class="box-view-later">
+                        <i class="fa-regular fa-clock"><span>Assistir mais tarde</span></i>
+
+                    </div>
+
+                    <div class="box-like">
+                        <i class="fa-regular fa-thumbs-up"><span>Videos marcados c...</span></i>
+
+                    </div>
+
+                    <div class="box-playlist">
+                        <i class="fa-regular fa-rectangle-list"><span>Playlist</span></i>
+
+                    </div>
+
+                    <div class="box-playlist2">
+                        <i class="fa-regular fa-rectangle-list"><span>Playlist2</span></i>
+
+                    </div>
+
+                    <div class="box-playlist3" 3>
+                        <i class="fa-regular fa-rectangle-list"><span>Playlist3</span></i>
+
+                    </div>
+
+                    <div class="box-show-more">
+                        <i onClick=mudarEstado() class="fa-solid fa-chevron-down"><span>Mostrar mais</span></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="line-division-2"></div>
+
+            <div class="secao-3">
+                <h2>Inscrições</h2>
+                <p>Você ainda não tem inscrições.</p>
+            </div>
+
+            <div class="line-division-3"></div>
+
+            <div class="secao-4">
+                <h2>Explorar</h2>
+                <div class="boxes">
+
+                    <div class="box">
+                        <i class="fa-solid fa-fire-flame-curved"><span>Em alta</span></i>
+                    </div>
+
+                    <div class="box">
+                        <i class="fa-solid fa-bag-shopping"><span>Shopping</span></i>
+                    </div>
+
+                    <div class="box">
+                        <i class="fa-solid fa-music"><span>Música</span></i>
+                    </div>
+
+                    <div class="box">
+                        <i class="fa-solid fa-film"><span>Filmes e programas</span></i>
+                    </div>
+
+                    <div class="box">
+                        <i class="fa-solid fa-signal"><span>Ao vivo</span></i>
+                    </div>
+
+                    <div class="box">
+                        <i class="fa-solid fa-gamepad"><span>Jogos</span></i>
+                    </div>
+
+                    <div class="box">
+                        <i class="fa-regular fa-newspaper"><span>Notícias</span></i>
+                    </div>
+
+                    <div class="box">
+                        <i class="fa-solid fa-trophy"><span>Esportes</span></i>
+                    </div>
+
+                    <div class="box">
+                        <i class="fa-regular fa-lightbulb"><span>Aprender</span></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="line-division-4"></div>
+
+            <div class="secao-5">
+                <h2>Mais do youtube</h2>
+                <div class="boxes">
+                    <div class="explorer">
+                        <span>Youtube Premium</span>
+                        <span>Youtube Music</span>
+                        <span>Youtube Kids</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="line-division-5"></div>
+
+            <div class="secao-6">
+                <div class="boxes">
+                    <div class="box-secao-6">
+                        <span>Configurações</span>
+                        <span>Histórico de denún...</span>
+                        <span>Ajuda</span>
+                        <span>Enviar feedback</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="line-division-6"></div>
+
+            <div class="secao-7">
+                <div class="boxes">
+                    <a href="#">Sobre</a>
+                    <a href="#">Imprensa</a>
+                    <a href="#">Direitos autorais</a>
+                    <a href="#">Entre em contato</a>
+                    <a href="#">Criadores de conteúdo</a>
+                    <a href="#">Publicidade</a>
+                    <a href="#">Desenvolvedores</a>
+                    <br />
+                    <br />
+                    <a href="#">Termos</a>
+                    <a href="#">Privacidade</a>
+                    <a href="#">Política e segurança</a>
+                    <a href="#">Como funciona o youtube</a>
+                    <a href="#">Testar os novos recursos</a>
+                    <p>₢ 2023 PortR LLC</p>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+    <section class="video-main">
+        <div class="video-main-center">
+            <div class="videos">
+                <div class="video-box">
+                    <img
+                        src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RW130cy?ver=ae87" />
+                    <h5>titulo</h5>
+                    <p>estatisticas</p>
+                </div>
+                <div class="video-box">
+                    <img
+                        src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RW130cy?ver=ae87" />
+                    <h5>titulo</h5>
+                    <p>estatisticas</p>
+                </div>
+                <div class="video-box">
+                    <img
+                        src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RW130cy?ver=ae87" />
+                    <h5>titulo</h5>
+                    <p>estatisticas</p>
+                </div>
+                <div class="video-box">
+                    <img
+                        src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RW130cy?ver=ae87" />
+                    <h5>titulo</h5>
+                    <p>estatisticas</p>
+                </div>
+                <div class="video-box">
+                    <img
+                        src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RW130cy?ver=ae87" />
+                    <h5>titulo</h5>
+                    <p>estatisticas</p>
+                </div>
+                <div class="video-box">
+                    <img
+                        src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RW130cy?ver=ae87" />
+                    <h5>titulo</h5>
+                    <p>estatisticas</p>
+                </div>
+                <div class="video-box">
+                    <img
+                        src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RW130cy?ver=ae87" />
+                    <h5>titulo</h5>
+                    <p>estatisticas</p>
+                </div>
+                <div class="video-box">
+                    <img
+                        src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RW130cy?ver=ae87" />
+                    <h5>titulo</h5>
+                    <p>estatisticas</p>
+                </div>
+                <div class="video-box">
+                    <img
+                        src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RW130cy?ver=ae87" />
+                    <h5>titulo</h5>
+                    <p>estatisticas</p>
+                </div>
+                <div class="video-box">
+                    <img
+                        src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RW130cy?ver=ae87" />
+                    <h5>titulo</h5>
+                    <p>estatisticas</p>
+                </div>
+                <div class="video-box">
+                    <img
+                        src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RW130cy?ver=ae87" />
+                    <h5>titulo</h5>
+                    <p>estatisticas</p>
+                </div>
+                <div class="video-box">
+                    <img
+                        src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RW130cy?ver=ae87" />
+                    <h5>titulo</h5>
+                    <p>estatisticas</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

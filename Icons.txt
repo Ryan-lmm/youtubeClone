@@ -1,0 +1,42 @@
+Lupa:
+<i class="fa-solid fa-magnifying-glass"></i>
+
+Mic:
+<i class="fa-solid fa-microphone"></i>
+
+cam/plus:
+<i class="fa-regular fa-video-plus"></i>
+
+bell:
+<i class="fa-regular fa-bell"></i>
+
+bars:
+<i class="fa-solid fa-bars"></i>
+
+home:
+<i class="fa-sharp fa-solid fa-house"></i>
+
+shorts:
+<i class="fa-regular fa-square-caret-right"></i>
+
+box-play:
+<i class="fa-solid fa-clapperboard"></i>
+
+cards-play:
+<i class="fa-sharp fa-light fa-clapperboard-play"></i>
+
+timer-ant-hour:
+<i class="fa-regular fa-timer fa-flip-horizontal"></i>
+
+clock:
+<i class="fa-regular fa-clock"></i>
+
+like:
+<i class="fa-light fa-thumbs-up"></i>
+
+bars-play:
+<i class="fa-light fa-list-music"></i>
+
+chevron-down:
+<i class="fa-regular fa-chevron-down"></i>
+
